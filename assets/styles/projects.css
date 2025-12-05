@@ -1,0 +1,131 @@
+.projects-section{
+    padding:100px 0px;
+}
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: black;
+  
+}
+
+/* Projects Container */
+.projects-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+
+/* Individual Project */
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+/* Image */
+.project-image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Text Content */
+.project-content {
+  flex: 1;
+  min-width: 260px;
+  max-width: 500px;
+}
+
+.project-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: black;
+}
+
+.project-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  /*color: #cbd5e1;*/
+  margin-bottom: 1.5rem;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;  /* Ensure slides are not wrapping */
+    width: 100%;  /* Ensure the wrapper takes full width */
+}
+.swiper {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.swiper-slide {
+    flex-shrink: 0;  /* Prevent slides from shrinking */
+    width: 100%;  /* Ensure each slide takes up full width of the container */
+    display: flex;
+    justify-content: center;  /* Center slide content */
+    align-items: center;  /* Center content vertically */
+}
+.project {
+  width: 100%;
+  max-width: 1000px;
+}
+/* Button */
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #22d3ee;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0ea5e9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  /* Turn off swiper layout */
+  .swiper-wrapper {
+    display: block !important;   /* Stack the slides */
+    transform: none !important;  /* Remove translation by Swiper */
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+    margin-bottom: 2rem;         /* Spacing between projects */
+  }
+
+  /* Hide swiper buttons & pagination */
+  .swiper-button-prev,
+  .swiper-button-next,
+  .swiper-pagination {
+    display: none !important;
+  }
+
+  /* Make project layout column */
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image img {
+    max-width: 100%;
+  }
+
+  
+
+}

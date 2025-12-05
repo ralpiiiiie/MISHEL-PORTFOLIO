@@ -1,0 +1,46 @@
+@import "aboutme.css";
+@import "homepage.css";
+@import "projects.css";
+@import "contact.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+    overflow-x: hidden;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  color: white;
+  line-height: 1.6;
+  padding: 0;
+}
+
+.btn {
+  padding: 0.65rem 1.5rem;
+  background-color: #050c3f;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: inherit; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.logo a:hover {
+  color: #0ea5e9; 
+  transform: scale(1.05); 
+}
+
+html, body{
+
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,144 @@
+.contact-section {
+  background: #172566;
+  width: 100%;
+  padding: 120px 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-bottom: none; /* remove */
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.contact-left h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contact-left p {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
+.contact-list li i {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  color: #1e293b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+  padding-right: 100px;
+}
+
+.contact-right h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: #1e293b;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #2dd4bf;
+  border: none;
+  border-radius: 6px;
+  color: #1e293b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0ea5e9;
+  color: white;
+}
+
+.footer-msg {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #cbd5e1;
+}
+
+/* Footer */
+.footer {
+  margin: 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  background-color:#071362; /* ADD THIS */
+  padding: 2rem 0;          /* Optional: adds spacing */
+}
+.footer-brand {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.footer-icons i {
+  margin: 0 8px; 
+  color: white;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contact-right, .contact-left {
+        padding: 0;
+    }
+}
